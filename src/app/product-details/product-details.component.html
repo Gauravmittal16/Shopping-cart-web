@@ -1,0 +1,23 @@
+<div *ngIf="product">
+    <h4 style="text-align: center;">Product Details</h4>
+    <div style="margin-left: 500px;">
+        <div>
+            <label><b>Name: </b></label> {{product.name}}
+        </div>
+    
+        <div>
+            <label><b>Type: </b></label> {{product.type}}
+        </div>
+    
+        <div>
+            <label><b>Catgeory: </b></label> {{product.category}}
+        </div>
+    
+        <div>
+            <label><b>Manufacturer: </b></label> {{product.manufacturer}}
+        </div>
+    
+        <button class="btn btn-primary" (click)="list()">Back to Products</button>
+    </div>
+    
+</div>

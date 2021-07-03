@@ -1,0 +1,30 @@
+<div class="panel panel-primary">
+	<div class="panel-heading">
+		<h4>We Have:</h4>
+	</div>
+	<div class="panel-body">
+		<table class="table table-striped">
+			<thead class="thead-dark">
+				<tr>
+					<th>Product Id</th>
+					<th>Name</th>
+					<th>Category</th>
+					<th>Do something</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor="let product of products">
+					
+					<td>{{product.id}}</td>
+					<td>{{product.name}}</td>
+					<td>{{product.category}}</td>
+					<td>
+						<button class="btn btn-success" (click)="detailedData(product.id)">More Details</button>
+						<button class="btn btn-danger" style="margin-left: 10px;" (click)="confirmDelete(product.id)"><span class="glyphicon glyphicon-trash"></span>Delete</button>
+						<button class="btn btn-info" style="margin-left: 10px;" (click)="updateData(product.id)">Update</button>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

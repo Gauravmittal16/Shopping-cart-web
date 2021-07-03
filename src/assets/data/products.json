@@ -1,0 +1,6 @@
+[
+	{"id":1, "name": "bicycle", "type": "geared", "category": "auto","manufacturer": "Hero","availablity": true},
+	{"id":12, "name": "trimmer", "type": "auotmatic", "category": "grooming","manufacturer": "Philips", "availablity": false},
+	{"id":13, "name": "power bank", "type": "C", "category": "electronics","manufacturer": "Syska LED", "availablity": true},
+	{"id":21, "name": "cover", "type": "normal", "category": "mobile","manufacturer": "Retro", "availablity": true}
+]

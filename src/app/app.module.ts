@@ -1,18 +1,28 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AppRoutingModule } from './app-routing.module';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AppRoutingModule, routingComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DeleteProductComponent } from './delete-product/delete-product.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { ProductService } from './product.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    routingComponents,
+    DeleteProductComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ProductService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
